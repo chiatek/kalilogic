@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+$primary: #98552A;
+$secondary: #707273;
+$black: #111111;
+$white: #FFFFFF;
+$dark: #12151B;
+$gray: #555555;
+$gray-secondary: #3C4142;
+$primary-hover: #944717;
+$text: #888;
+$text-secondary: #323232;
+
+@import "global";
+@import "header";
+@import "hero";
+@import "about";
+@import "services";
+@import "projects";
+@import "contact";
+@import "footer";

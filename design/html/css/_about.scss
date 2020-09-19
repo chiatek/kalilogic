@@ -1,0 +1,61 @@
+// about section
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    padding-bottom: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .square {
+        background: $primary;
+        width: 11px;
+        height: 11px;
+        display: inline-block;
+    }
+
+    .item {
+        h3 {
+            display: inline-block;
+            margin-left: 15px;
+            color: $gray;
+        }
+
+        p {
+            line-height: 25px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+    }
+
+    .about-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .about {
+        .item {
+            p {
+                text-align: left;
+            }
+        }
+
+        .about-title {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (min-width: 864px) {
+    .about {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-column-gap: 75px;
+    }
+}

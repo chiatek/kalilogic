@@ -1,0 +1,62 @@
+// footer
+
+.black-wrapper {
+    background: $black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'about about'
+        'contact follow';
+
+    .item1 {
+        grid-area: about;
+    }
+
+    .item2 {
+        grid-area: contact;
+
+        p, ul li {
+            font-size: 0.9em;
+        }
+    }
+
+    .item3 {
+        grid-area: follow;
+
+        ul li {
+            font-size: 0.9em;
+        }
+    }
+
+    .item1, .item2, .item3 {
+        h5 {
+            color: $white;
+        }
+
+        p, ul li, ul li button {
+            color: $gray-secondary;
+            margin-bottom: 1px;
+        }
+
+        ul li button:hover {
+            color: $gray;
+        }
+    }
+
+    p {
+        display: block;
+        color: $gray-secondary;
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 'about contact follow';
+        grid-column-gap: 50px;
+    }
+}

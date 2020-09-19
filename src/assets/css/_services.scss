@@ -1,0 +1,77 @@
+// services section
+
+.bg-wrapper {
+    background: url("../images/keyboard.png") center center/cover no-repeat;
+    padding: 10px 0 40px 0;
+}
+
+#services {
+    .section-summary {
+        color: $black;
+    }
+}
+
+.services {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 15px;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'mobile support'
+        'logo logo';
+    
+    .item-1 {
+        grid-area: mobile;
+    }
+
+    .item-2 {
+        grid-area: support;
+    }
+
+    .item-3 {
+        grid-area: logo;
+    }
+
+    .icon {
+        background: $primary;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .fa-icon {
+        color: $white;
+        text-align: center;
+        width: 100%;
+        margin-top: 8px;
+        font-size: 2em;
+    }
+
+    .item-1, .item-2, .item-3 {
+        padding: 15px 0;
+
+        h4, p {
+            color: $black;
+            text-align: center;        
+        }
+
+        p {
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 864px) {
+    .services {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 'mobile support logo';
+        grid-column-gap: 40px;
+
+        .item-1, .item-2, .item-3 {
+            padding: 20px 0;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+// contact section
+
+.dark-wrapper {
+    background: $dark;
+    padding-bottom: 60px; 
+}
+
+#contact {
+    .title {
+        h2 {
+            color: $white;
+        }
+    }
+    
+    .section-summary {
+        color: $secondary;
+    }
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .form-group {
+        margin: 20px 0;
+    }
+
+    input, textarea, button {
+        background: $dark;
+        width: 100%;
+    }
+
+    textarea {
+        height: 128px;
+        color: $secondary;
+        border: 3px solid $secondary;
+        padding: 10px;
+    }
+
+    input {
+        height: 66px;
+        color: $secondary;
+        border: 3px solid $secondary;
+        padding-left: 10px;
+    }
+
+    button {
+        height: 66px;
+        color: $primary;
+        border: 3px solid $primary;
+        font-size: 1em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: $primary-hover;
+        border: 3px solid $primary-hover;
+    }
+}
+
+@media (min-width: 576px) {
+    .contact {
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 20px;
+        }
+    }
+}

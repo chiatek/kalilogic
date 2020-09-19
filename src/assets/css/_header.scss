@@ -1,0 +1,110 @@
+// header and nav menu
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-btn {
+        background: transparent;
+        padding: 0.3em 0 0.5em 0;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .nav-btn:hover {
+        color: $primary-hover;
+    }
+
+    .nav-icon {
+        font-size: 1.5em;
+        color: $white;
+    }
+
+    .nav-icon:hover {
+        color: $primary;
+    }
+}
+
+nav {
+    ul {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        background: #0a0a0a;
+        margin: 0 -1.5em;
+
+        .active button {
+            color: $primary;
+        }
+
+        li button {
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0;
+            color: $white;
+            transition: all 0.3s linear;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        li button:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-nav {
+    height: 225px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    nav {  
+        ul {
+            display: flex;
+            margin: 0;
+            background: transparent;
+    
+            li button {
+                padding: .8em 1em;
+                color: $white;
+            }
+        }
+    }
+
+    .nav-links {
+        height: auto;
+    }
+}

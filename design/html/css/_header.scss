@@ -1,0 +1,99 @@
+// header and nav menu
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-btn {
+        background: transparent;
+        padding-bottom: 1em;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .nav-btn:hover {
+        color: $primary-hover;
+    }
+
+    .nav-icon {
+        font-size: 1.5em;
+        color: $primary;
+    }
+}
+
+nav {
+    ul {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+
+        li a {
+            display: block;
+            padding: 1em 0;
+            color: $white;
+            transition: all 0.3s linear;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        li a:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-nav {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        background: transparent;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    nav {  
+        ul {
+            display: flex;
+    
+            li a {
+                padding: .8em 1em;
+                color: $white;
+            }
+        }
+    }
+
+    .nav-links {
+        height: auto;
+    }
+}

@@ -1,0 +1,52 @@
+// footer
+
+.black-wrapper {
+    background: $black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'about about'
+        'contact follow';
+
+    .item1 {
+        grid-area: about;
+    }
+
+    .item2 {
+        grid-area: contact;
+    }
+
+    .item3 {
+        grid-area: follow;
+    }
+
+    .item1, .item2, .item3 {
+        h5 {
+            color: $white;
+        }
+
+        p, ul li, ul li a {
+            color: $gray-secondary;
+        }
+
+        ul li a:hover {
+            color: $gray;
+        }
+    }
+
+    p {
+        display: block;
+        color: $gray-secondary;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 'about contact follow';
+        grid-column-gap: 50px;
+    }
+}
