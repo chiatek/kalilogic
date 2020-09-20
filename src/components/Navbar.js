@@ -47,27 +47,27 @@ class Navbar extends React.Component {
             });
         } 
 
-        if (SetActiveItem("home", 80)) {
+        if (SetActiveItem("home", 100)) {
             this.setState({ 
                 section: { home: "active" }
             })
         }
-        if (SetActiveItem("about", 80)) {
+        if (SetActiveItem("about", 100)) {
             this.setState({
                 section: { about: "active" }
             })
         }
-        if (SetActiveItem("services", 80)) {
+        if (SetActiveItem("services", 100)) {
             this.setState({
                 section: { services: "active" }
             })
         }
-        if (SetActiveItem("projects", 80)) {
+        if (SetActiveItem("projects", 100)) {
             this.setState({
                 section: { projects: "active" }
             })
         }
-        if (SetActiveItem("contact", 80)) {
+        if (SetActiveItem("contact", 100)) {
             this.setState({
                 section: { contact: "active" }
             })
