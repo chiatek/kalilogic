@@ -63,3 +63,19 @@
         }
     }
 }
+
+@media (min-height: 1366px) {
+    #video {
+        display: none;
+    }
+    
+    .hero-wrapper {
+        background-image: url("../images/poster.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        margin-top: 40em;
+    }
+}
