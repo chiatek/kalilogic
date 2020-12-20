@@ -283,6 +283,12 @@ nav ul li button:hover {
   }
 }
 
+@media (max-width: 900px) and (max-height: 500px) {
+  .hero-content {
+    margin-top: 8em;
+  }
+}
+
 .about {
   display: -ms-grid;
   display: grid;
